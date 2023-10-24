@@ -10,6 +10,10 @@ max-width: 888px;
     border: 1px solid black;
     padding: 20px;
 }
+
+/*
+----------------Képek-----------------
+*/
 #imageright{
 	float: right;
     max-width: 200px;
@@ -23,6 +27,13 @@ max-width: 888px;
     max-width: 200px;
     width: auto;
 }
+
+#imageright2 img{
+    max-width: 200px;
+    width: auto;
+}
+
+
 #imageleft{
     float: left;
 	max-width: 300px;
@@ -37,6 +48,27 @@ max-width: 888px;
 	max-width: 300px;
     width: auto;
 }
+
+#imageleft2 img{   
+	max-width: 300px;
+    width: auto;
+}
+
+
+#imageright2{
+    display: none;
+}
+
+#imageleft2{
+    display:none ;
+}
+
+
+
+/*
+----------------Szöveg-----------------
+*/
+
 .kepszoveg{
 	font-weight: bold;
     font-style: italic;
@@ -57,19 +89,42 @@ p,li{
     text-align: justify;
 }
 
+/*
+----------------Media-----------------
+*/
+
 @media screen and (max-width: 600px){
     
     #imageright{
-        float: none;
-        margin: 0 auto;
-        display: block;
+     display: none;
         
     }
 
-    #imageleft{
-        float: none;
-        margin: 0 auto;
+    #imageright2{
         display: block;
+        float: none;
+        max-width: 200px;
+        margin-left: 20px;
+        border: 1px solid forestgreen;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+
+    #imageleft{
+        display: none;
         
+    }
+
+    #imageleft2{
+        display: block;
+	    max-width: 300px;
+        width: auto;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        border: 1px solid forestgreen;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 0 auto;
     }
 }
